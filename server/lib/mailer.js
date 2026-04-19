@@ -56,7 +56,7 @@ function buildHtml({ order, story }) {
     <div style="background:#FFF7EC; border:1px solid #F4D9A0; border-radius:10px; padding:14px 16px; margin-bottom:18px;">
       <p style="margin:0 0 6px 0; font-weight:600; color:#1E2A4A; font-size:13px;">Orderbevestiging &amp; bevestiging directe levering</p>
       <p style="margin:0; color:#1E2A4A; font-size:12px; line-height:1.5;">
-        Je hebt bij de bestelling uitdrukkelijk verzocht om directe uitvoering van de overeenkomst en daarmee afstand gedaan van je herroepingsrecht voor digitale inhoud (art. 6:230p sub d BW). Wij bevestigen dit hierbij, conform art. 6:230v lid 7 BW. Zie de <a href="https://jouwvoorleesboekje.nl/#/algemene-voorwaarden" style="color:#1E2A4A;">algemene voorwaarden</a>, sectie 4.
+        Je hebt bij de bestelling uitdrukkelijk verzocht om directe uitvoering van de overeenkomst en daarmee afstand gedaan van je herroepingsrecht voor digitale inhoud (art. 6:230p sub d BW). Wij bevestigen dit hierbij, conform art. 6:230v lid 7 BW. Zie de <a href="https://jouwvoorleesboekje.nl/#/voorwaarden" style="color:#1E2A4A;">algemene voorwaarden</a>, sectie 4.
       </p>
     </div>
     <p style="color:#7A8BB0; font-size:13px; line-height:1.5;">

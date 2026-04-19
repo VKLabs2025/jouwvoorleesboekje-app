@@ -402,7 +402,7 @@ function renderStepGegevens() {
           </div>
           <div class="check-row">
             <input type="checkbox" id="cd" ${state.consentDigitalDelivery ? 'checked' : ''}/>
-            <label for="cd">Ik verzoek uitdrukkelijk om directe uitvoering: start meteen met het genereren en leveren van mijn boekje. Ik doe daarmee uitdrukkelijk <strong>afstand van mijn herroepingsrecht</strong> voor digitale inhoud (art. 6:230p sub d BW). Zie <a href="#/algemene-voorwaarden" target="_blank">algemene voorwaarden</a>, sectie 4.</label>
+            <label for="cd">Ik verzoek uitdrukkelijk om directe uitvoering: start meteen met het genereren en leveren van mijn boekje. Ik doe daarmee uitdrukkelijk <strong>afstand van mijn herroepingsrecht</strong> voor digitale inhoud (art. 6:230p sub d BW). Zie <a href="#/voorwaarden" target="_blank">algemene voorwaarden</a>, sectie 4.</label>
           </div>
           <div id="formError" class="error-banner" style="display:none;"></div>
           <div class="flow-actions">
@@ -495,7 +495,7 @@ function renderStepControle() {
         </div>
         <div style="background:#fff7ec; border:1px solid #f4d9a0; border-radius:10px; padding:14px 16px; margin-top:16px; font-size:14px; line-height:1.5;">
           <strong>Bevestiging directe levering</strong><br>
-          Door op <em>Betaal €4,95 met iDEAL</em> te klikken, bevestig je nogmaals dat je ons uitdrukkelijk verzoekt om onmiddellijk te starten met het genereren en leveren van je boekje, en dat je daarmee uitdrukkelijk afstand doet van je <a href="#/algemene-voorwaarden" target="_blank">herroepingsrecht</a> voor digitale inhoud (art. 6:230p sub d BW).
+          Door op <em>Betaal €4,95 met iDEAL</em> te klikken, bevestig je nogmaals dat je ons uitdrukkelijk verzoekt om onmiddellijk te starten met het genereren en leveren van je boekje, en dat je daarmee uitdrukkelijk afstand doet van je <a href="#/voorwaarden" target="_blank">herroepingsrecht</a> voor digitale inhoud (art. 6:230p sub d BW).
         </div>
         <div id="submitError" class="error-banner" style="display:none;"></div>
         <div class="flow-actions">
