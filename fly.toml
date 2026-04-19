@@ -1,0 +1,48 @@
+# Fly.io app config — Jouw Voorleesboekje
+app = "jouwvoorleesboekje"
+primary_region = "ams"   # Amsterdam — data dicht bij NL
+
+[build]
+
+[env]
+  PORT = "8080"
+  NODE_ENV = "production"
+  DATA_DIR = "/data"
+  DB_PATH = "/data/db/voorleesboekje.db"
+  PDF_DIR = "/data/pdfs"
+  TMP_DIR = "/data/tmp"
+  MOLLIE_MODE = "test"
+  RESEND_FROM_EMAIL = "hallo@jouwvoorleesboekje.nl"
+  RESEND_DOMAIN_VERIFIED = "false"
+  COMPANY_NAME = "Jouw Voorleesboekje"
+  COMPANY_KVK = "14100344"
+  COMPANY_BTW = "NL819114674B01"
+  COMPANY_DOMAIN = "jouwvoorleesboekje.nl"
+  DEFAULT_ILLUSTRATION_STYLE = "warme-waterverf"
+  DEFAULT_PRODUCT_PRICE_EUR = "4.95"
+
+# Secrets worden apart gezet via `fly secrets set` — NOOIT in deze file:
+# OPENAI_API_KEY, MOLLIE_API_KEY, RESEND_API_KEY, ADMIN_PASSWORD
+
+[[mounts]]
+  source = "voorleesboekje_data"
+  destination = "/data"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
+
+  [[http_service.checks]]
+    interval = "30s"
+    timeout = "5s"
+    grace_period = "10s"
+    method = "GET"
+    path = "/api/health"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"

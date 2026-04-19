@@ -1,0 +1,13 @@
+node_modules/
+.env*
+tmp/
+logs/
+data/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+proefboekjes/
+V*.md
+build-status.md
+.DS_Store

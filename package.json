@@ -1,0 +1,24 @@
+{
+  "name": "jouwvoorleesboekje-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
+    "seed": "node server/scripts/seed-examples.js",
+    "cleanup": "node server/scripts/cleanup.js"
+  },
+  "dependencies": {
+    "@mollie/api-client": "^3.7.0",
+    "better-sqlite3": "^11.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nanoid": "^5.0.7",
+    "openai": "^4.67.3",
+    "pdfkit": "^0.15.0",
+    "resend": "^4.0.0",
+    "zod": "^3.23.8"
+  }
+}

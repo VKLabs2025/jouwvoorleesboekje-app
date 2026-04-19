@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mock iDEAL — Jouw Voorleesboekje</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container" style="max-width:560px; margin: 80px auto;">
+    <div class="card card-padded">
+      <h2>Mock iDEAL (dev/testmodus)</h2>
+      <p>Dit is een teststub. In productie (met echte Mollie-key) kom je nooit hier; dan ga je direct naar Mollie's checkout.</p>
+      <div id="summary" class="payment-amount">
+        <span>Jouw Voorleesboekje</span>
+        <span class="price">€4,95</span>
+      </div>
+      <div style="display:flex; gap:10px;">
+        <button class="btn btn-primary btn-lg" id="payBtn" style="flex:1;">Betaling bevestigen</button>
+        <button class="btn btn-ghost" id="cancelBtn">Annuleren</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    const p = new URLSearchParams(location.search);
+    const orderId = p.get('orderId');
+    const API_BASE = '__PORT_8000__'.startsWith('__') ? '' : '__PORT_8000__';
+    document.getElementById('payBtn').onclick = async () => {
+      await fetch(`${API_BASE}/api/orders/${orderId}/mock-confirm`, { method: 'POST' });
+      location.href = `/#/generatie/${orderId}`;
+    };
+    document.getElementById('cancelBtn').onclick = () => { location.href = '/#/maak/controle'; };
+  </script>
+</body>
+</html>
