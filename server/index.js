@@ -123,8 +123,11 @@ app.post('/api/orders/:id/payment', async (req, res) => {
     }
     const price = Number(process.env.DEFAULT_PRODUCT_PRICE_EUR || 4.95);
     // Build redirect/webhook URLs uit request (zelfde host als proxy)
-    const base = req.body?.publicBase || `${req.protocol}://${req.get('host')}`;
-    const redirectUrl = `${base}/?page=betaling-status&orderId=${order.id}`;
+    // X-Forwarded-* headers respecteren (Render/Fly achter proxy met https)
+    const proto = (req.headers['x-forwarded-proto'] || req.protocol || 'https').split(',')[0].trim();
+    const host = req.headers['x-forwarded-host'] || req.get('host');
+    const base = req.body?.publicBase || process.env.APP_BASE_URL || `${proto}://${host}`;
+    const redirectUrl = `${base}/#/generatie/${order.id}`;
     const webhookUrl = `${base}/api/webhooks/mollie`;
     const payment = await createMolliePayment({ order, redirectUrl, webhookUrl, amount: price });
     updateOrder(order.id, { molliePaymentId: payment.id });

@@ -413,11 +413,31 @@ function renderStepGegevens() {
       </div>
     </section>
   `;
+  function persistFormFields() {
+    const f = view().querySelector('#gForm');
+    if (!f) return;
+    if (f.childFirstName) state.childFirstName = f.childFirstName.value;
+    if (f.childAge && f.childAge.value !== '') state.childAge = Number(f.childAge.value);
+    if (f.favoriteAnimal) state.favoriteAnimal = f.favoriteAnimal.value;
+    if (f.hobby) state.hobby = f.hobby.value;
+    if (f.friendName) state.friendName = f.friendName.value;
+    if (f.parentEmail) state.parentEmail = f.parentEmail.value;
+    if (f.senderNote) state.senderNote = f.senderNote.value;
+    saveState();
+  }
+  // Live-persist alle tekst/nummer/textarea-velden bij elke wijziging,
+  // zodat een re-render (bv. na moraal-klik) de ingevoerde waarden niet wist.
+  view().querySelector('#gForm').addEventListener('input', persistFormFields);
   view().querySelectorAll('.moral-opt').forEach(b => {
-    b.addEventListener('click', () => { state.moral = b.dataset.id; saveState(); renderStepGegevens(); });
+    b.addEventListener('click', () => {
+      persistFormFields();
+      state.moral = b.dataset.id;
+      saveState();
+      renderStepGegevens();
+    });
   });
-  view().querySelector('#cp').addEventListener('change', e => { state.consentPrivacy = e.target.checked; saveState(); });
-  view().querySelector('#cd').addEventListener('change', e => { state.consentDigitalDelivery = e.target.checked; saveState(); });
+  view().querySelector('#cp').addEventListener('change', e => { persistFormFields(); state.consentPrivacy = e.target.checked; saveState(); });
+  view().querySelector('#cd').addEventListener('change', e => { persistFormFields(); state.consentDigitalDelivery = e.target.checked; saveState(); });
   view().querySelector('#gForm').addEventListener('submit', e => {
     e.preventDefault();
     const f = e.target;
