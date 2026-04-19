@@ -53,13 +53,20 @@ function buildHtml({ order, story }) {
       Tip: bekijk het boekje eerst zelf, zodat je op de juiste toon kunt voorlezen. Welterusten-verhalen werken het best als jullie samen rustig zitten.
     </p>
     <hr style="border:none; border-top:1px solid #F1E3D2; margin:24px 0;">
+    <div style="background:#FFF7EC; border:1px solid #F4D9A0; border-radius:10px; padding:14px 16px; margin-bottom:18px;">
+      <p style="margin:0 0 6px 0; font-weight:600; color:#1E2A4A; font-size:13px;">Orderbevestiging &amp; bevestiging directe levering</p>
+      <p style="margin:0; color:#1E2A4A; font-size:12px; line-height:1.5;">
+        Je hebt bij de bestelling uitdrukkelijk verzocht om directe uitvoering van de overeenkomst en daarmee afstand gedaan van je herroepingsrecht voor digitale inhoud (art. 6:230p sub d BW). Wij bevestigen dit hierbij, conform art. 6:230v lid 7 BW. Zie de <a href="https://jouwvoorleesboekje.nl/#/algemene-voorwaarden" style="color:#1E2A4A;">algemene voorwaarden</a>, sectie 4.
+      </p>
+    </div>
     <p style="color:#7A8BB0; font-size:13px; line-height:1.5;">
       Verhaal en illustraties zijn met AI gegenereerd en automatisch gecontroleerd op kindveiligheid.<br>
       Je PDF blijft 30 dagen beschikbaar. Kindgegevens verwijderen we automatisch binnen 72 uur.<br>
       Vragen? Reageer op deze mail of stuur een berichtje naar hallo@jouwvoorleesboekje.nl.
     </p>
     <p style="color:#7A8BB0; font-size:12px; margin-top:16px;">
-      Order: ${order.id}
+      Order: ${order.id}<br>
+      Jouw Voorleesboekje &mdash; KvK 14100344 &mdash; BTW NL819114674B01
     </p>
   </div>
 </body></html>`;

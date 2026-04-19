@@ -14,9 +14,24 @@ Voor €4,95 (incl. 21% btw) maken we een uniek digitaal voorleesboekje als PDF,
 
 De PDF wordt binnen een paar minuten tot maximaal 24 uur na betaling per e-mail aangeleverd. Lukt aflevering niet, dan blijft de PDF ten minste 30 dagen beschikbaar via een downloadlink die we je kunnen toesturen.
 
-## 4. Herroepingsrecht
+## 4. Herroepingsrecht bij digitale inhoud
 
-Omdat het om een direct geleverde digitale dienst gaat die op jouw verzoek voor jou persoonlijk wordt gemaakt, vervalt het wettelijke herroepingsrecht zodra we beginnen met het produceren van het boekje. Dit staat expliciet vermeld bij je bestelling en je geeft hier toestemming voor.
+### 4.1 Hoofdregel
+Normaal gesproken heb je als consument 14 dagen bedenktijd na aankoop op afstand (art. 6:230o BW). Voor digitale inhoud die niet op een materiële drager (cd, dvd) wordt geleverd, geldt hierop een wettelijke uitzondering (art. 6:230p sub d BW).
+
+### 4.2 Uitdrukkelijke afstand
+Bij het plaatsen van je bestelling vragen we je om — via twee aparte, niet-voorgevinkte vakjes — expliciet:
+
+1. **in te stemmen** met de directe uitvoering van de overeenkomst (het onmiddellijk genereren en leveren van je boekje), en
+2. **uitdrukkelijk afstand te doen** van je herroepingsrecht zodra we beginnen met de uitvoering.
+
+Als je beide vakjes hebt aangevinkt, verklaar je ondubbelzinnig dat je ermee akkoord gaat dat we onmiddellijk starten met de productie en dat je je herroepingsrecht daarmee verliest op het moment dat de generatie begint.
+
+### 4.3 Bevestiging in orderbevestiging
+We bevestigen deze uitdrukkelijke toestemming en afstand van het herroepingsrecht nogmaals in de orderbevestigings-e-mail die we je sturen na betaling, conform art. 6:230v lid 7 BW.
+
+### 4.4 Wat betekent dit praktisch?
+Zodra we starten met het genereren van jouw unieke boekje (dit is bij ons binnen seconden na betaling) kun je de bestelling niet meer herroepen. Je hebt daarmee wel recht op een kwalitatief deugdelijk product. Ben je niet tevreden? Zie dan sectie 6 (Klachten & terugbetaling) — dat recht staat los van het herroepingsrecht.
 
 ## 5. AI-disclosure
 
